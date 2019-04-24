@@ -22,14 +22,10 @@ DROP TABLE IF EXISTS composer;
 DROP TABLE IF EXISTS utiliser;
 DROP TABLE IF EXISTS recourir;
 DROP TABLE IF EXISTS fabriquer;
-#------------------------------------------------------------
-#        Script MySQL.
-#------------------------------------------------------------
 
 
-#------------------------------------------------------------
 # Table: produit
-#------------------------------------------------------------
+
 
 CREATE TABLE produit(
         nomP       Varchar (100) NOT NULL ,
@@ -44,9 +40,9 @@ CREATE TABLE produit(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
+
 # Table: utilisatrice
-#------------------------------------------------------------
+
 
 CREATE TABLE utilisatrice(
         NomU         Varchar (100) NOT NULL ,
@@ -61,9 +57,9 @@ CREATE TABLE utilisatrice(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
+
 # Table: étape
-#------------------------------------------------------------
+
 
 CREATE TABLE etape(
         numeroE       Integer NOT NULL ,
@@ -73,9 +69,9 @@ CREATE TABLE etape(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
+
 # Table: recette
-#------------------------------------------------------------
+
 
 CREATE TABLE recette(
         titreR           Varchar (100) NOT NULL ,
@@ -88,9 +84,9 @@ CREATE TABLE recette(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
+
 # Table: zonegéo
-#------------------------------------------------------------
+
 
 CREATE TABLE zonegeo(
         continentZ Varchar (100) ,
@@ -101,9 +97,9 @@ CREATE TABLE zonegeo(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
+
 # Table: adresse
-#------------------------------------------------------------
+
 
 CREATE TABLE adresse(
         villeA      Varchar (100) ,
@@ -117,9 +113,8 @@ CREATE TABLE adresse(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
 # Table: unité
-#------------------------------------------------------------
+
 
 CREATE TABLE unite(
         nomUN         Varchar (100) NOT NULL ,
@@ -128,9 +123,8 @@ CREATE TABLE unite(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
 # Table: lieu
-#------------------------------------------------------------
+
 
 CREATE TABLE lieu(
         lattitudeL Double NOT NULL ,
@@ -139,9 +133,9 @@ CREATE TABLE lieu(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
+
 # Table: ingrédient
-#------------------------------------------------------------
+
 
 CREATE TABLE ingredient(
         nomI           Varchar (100) NOT NULL ,
@@ -156,9 +150,9 @@ CREATE TABLE ingredient(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
+
 # Table: contenir
-#------------------------------------------------------------
+
 
 CREATE TABLE contenir(
         nomI Varchar (100) NOT NULL ,
@@ -167,9 +161,9 @@ CREATE TABLE contenir(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
+
 # Table: composer
-#------------------------------------------------------------
+
 
 CREATE TABLE composer(
         IngredientConcerne Varchar (100) NOT NULL ,
@@ -180,9 +174,9 @@ CREATE TABLE composer(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
+
 # Table: utiliser
-#------------------------------------------------------------
+
 
 CREATE TABLE utiliser(
         quantiteIngredient Float ,
@@ -192,9 +186,9 @@ CREATE TABLE utiliser(
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
+
 # Table: recourir
-#------------------------------------------------------------
+
 
 CREATE TABLE recourir(
         quantiteProduit Float ,
@@ -202,6 +196,8 @@ CREATE TABLE recourir(
         nomP            Varchar (100) NOT NULL ,
         PRIMARY KEY (titreR ,nomP )
 )ENGINE=InnoDB;
+
+# Contraintes 
 
 ALTER TABLE produit ADD CONSTRAINT FK_produit_nomUN FOREIGN KEY (nomUN) REFERENCES unite(nomUN);
 ALTER TABLE produit ADD CONSTRAINT FK_produit_lattitudeL FOREIGN KEY (lattitudeL) REFERENCES lieu(lattitudeL);
