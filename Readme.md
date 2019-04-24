@@ -565,6 +565,6 @@ INSERT INTO composer VALUES('fraise',9,'Donnut a la fraise',11);#disposer
 
 ```
 
-##Diagramme Entité-Association
+## Diagramme Entité-Association
 
 ![Diagramme e-a ](diagrammeea.png)
