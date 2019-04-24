@@ -2,7 +2,7 @@
 
 ## Importation de la base de données 
 
-'''
+```
 
 
 DROP DATABASE IF EXISTS macdoh;
@@ -221,4 +221,4 @@ ALTER TABLE utiliser ADD CONSTRAINT FK_utiliser_titreR FOREIGN KEY (titreR) REFE
 ALTER TABLE recourir ADD CONSTRAINT FK_recourir_titreR FOREIGN KEY (titreR) REFERENCES recette(titreR);
 ALTER TABLE recourir ADD CONSTRAINT FK_recourir_nomP FOREIGN KEY (nomP) REFERENCES produit(nomP);
 
-'''
+```
