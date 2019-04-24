@@ -222,3 +222,5 @@ ALTER TABLE recourir ADD CONSTRAINT FK_recourir_titreR FOREIGN KEY (titreR) REFE
 ALTER TABLE recourir ADD CONSTRAINT FK_recourir_nomP FOREIGN KEY (nomP) REFERENCES produit(nomP);
 
 ```
+
+[! Diagramme e-a ]()
