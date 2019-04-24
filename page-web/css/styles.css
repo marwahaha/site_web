@@ -1,0 +1,107 @@
+
+header{
+	background-color: #B72B2E;
+	padding-top:1em;
+	padding-bottom:1em;
+	font-family: Comic Sans MS;
+	color:#FDC1EB;
+
+}
+
+nav {
+	background-color: #FF8000;
+	border: 1px solid red;
+	float: left;
+	padding-left:1em;
+	padding-right:1em;
+	padding-top:1em;
+	padding-bottom:1em;
+	position:fixed;
+	left:10px;
+	top:140px;
+	display:fixed;
+	font-family: Arial;
+	font-size:13px;
+}
+
+body {
+    background-color: #BAD4FB;
+}
+
+form {
+	width:500px;
+	height:350px;
+ }
+
+fieldset{
+	margin-top:10px;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+legend{
+	font-size:10; 
+	font-weight:bold;
+}
+
+main{
+	margin-left:150px;
+}
+
+section{
+	padding:10px;
+	margin-left:100px;
+	font-family:Comic Sans MS;
+}
+
+html{
+	border: 5px solid green;
+}
+
+footer{
+	background-color:#F7DF3C;
+	color:#B72B2E;
+	border-radius:2em;
+	padding-top:1em;
+	padding-bottom:1em;
+	padding-left:1em;
+	padding-right:1em;
+	display:flex;
+	justify-content: space-around;
+	font-family:Comic Sans MS;
+
+}
+h7{
+	color:red;
+}
+#table {
+		border-collapse: collapse;
+	}
+#td {
+	border: 1px solid black;
+}
+
+#Photo1{
+
+position:flex;
+margin-top: 0px;
+margin-left: 0px;
+}
+
+
+#Photo2{
+
+	position:flex;
+	margin-left:10px;
+}
+
+#TexteAcceuil{
+	position:flex;
+
+}
+
+#stats{
+	position:flex;
+	margin-left:110px;
+
+}
