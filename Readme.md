@@ -118,7 +118,7 @@ CREATE TABLE adresse(
 
 CREATE TABLE unite(
         nomUN         Varchar (100) NOT NULL ,
-        abreviationUN Varchar (100) ,
+        abbreviationUN Varchar (100) ,
         PRIMARY KEY (nomUN )
 )ENGINE=InnoDB;
 
